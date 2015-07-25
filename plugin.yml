@@ -1,0 +1,23 @@
+name: Coins
+version: 1.0
+main: me.recolance.coins.Coins
+
+commands:
+  coins:
+    aliases: [money, balance, bal, wallet, coin]
+  pay:
+    aliases: [payment]
+  baltop:
+    aliases: [balancetop, bt]
+    
+permissions:
+  coins.set:
+    default: op
+  coins.remove:
+    default: op
+  coins.add:
+    default: op
+  coins.log:
+    default: op
+    
+depend: [PlayerLog, GlobalUtil]
